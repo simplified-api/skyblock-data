@@ -15,7 +15,7 @@ Python 3.8+, standard library only - no virtualenv, no dependencies. Always run 
 
 ## Architecture
 
-- **`data/v1/<category>/<table>.json`** is the on-disk layout. `<table>` is the JPA `@Table(name=...)` of the corresponding `dev.sbs.minecraftapi.persistence.model` class in the consumer repo. Categories (`items`, `mobs`, `modifiers`, `player`, `world`) are presentational only - consumers read `index.json`, not directory names.
+- **`data/v1/<category>/<table>.json`** is the on-disk layout. `<table>` is the JPA `@Table(name=...)` of the corresponding `dev.sbs.skyblockdata.model` class in the consumer repo. Categories (`items`, `mobs`, `modifiers`, `player`, `world`) are presentational only - consumers read `index.json`, not directory names.
 
 - **`<table>_extra.json`** is an optional companion file merged into its primary at load time. Extras have no registered model class of their own; they need a matching primary or the generator aborts with an "orphan extra" error.
 

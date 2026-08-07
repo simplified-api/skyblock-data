@@ -34,7 +34,7 @@ Schema:
       "path": "data/v1/world/regions.json",
       "category": "world",
       "table_name": "regions",
-      "model_class": "dev.sbs.minecraftapi.persistence.model.Region",
+      "model_class": "dev.sbs.skyblockdata.model.Region",
       "content_sha256": "a1b2c3...",
       "bytes": 3166,
       "has_extra": false
@@ -43,7 +43,7 @@ Schema:
       "path": "data/v1/items/items.json",
       "category": "items",
       "table_name": "items",
-      "model_class": "dev.sbs.minecraftapi.persistence.model.Item",
+      "model_class": "dev.sbs.skyblockdata.model.Item",
       "content_sha256": "f9e8d7...",
       "bytes": 7242564,
       "has_extra": true,
@@ -58,7 +58,7 @@ Schema:
 - `count` is the number of distinct entities (41), not the raw file count. `has_extra: true` flags entities that have an `_extra` companion file, which is merged into the primary file at load time.
 - `content_sha256` is a lowercase hex digest of the file bytes as stored on disk. Consumers use it for change detection.
 - `table_name` matches the `@Table(name = "...")` JPA annotation on the corresponding Java model.
-- `model_class` is the fully-qualified class name in the SkyBlock-Simplified `minecraft-api` module.
+- `model_class` is the fully-qualified class name in the Simplified-Api `skyblock` module.
 - `path` is always relative to the repo root and is exactly what a Feign `getFile(path)` call should request.
 
 ## Consumer workflow

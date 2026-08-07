@@ -31,12 +31,12 @@ from typing import Dict, List, Optional, Tuple
 #
 # The table name is the stem of the primary JSON file (e.g., "items" for
 # "items.json"). The model class is the @Table-annotated JpaModel subclass in
-# minecraft-api. When a new JSON file is added under data/v1/, add its table
+# the skyblock module. When a new JSON file is added under data/v1/, add its table
 # here in the same commit - the generator refuses to emit an index for any
 # file whose table is not registered.
 # ---------------------------------------------------------------------------
 
-MODEL_PACKAGE = "dev.sbs.minecraftapi.persistence.model"
+MODEL_PACKAGE = "dev.sbs.skyblockdata.model"
 
 MODEL_CLASS_BY_TABLE: Dict[str, str] = {
     "accessories": f"{MODEL_PACKAGE}.Accessory",
