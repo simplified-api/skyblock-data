@@ -90,7 +90,7 @@ The reference consumer is [simplified-api/skyblock](https://github.com/simplifie
       "path": "data/v1/items/items.json",
       "category": "items",
       "table_name": "items",
-      "model_class": "dev.sbs.skyblockdata.model.Item",
+      "model_class": "dev.simplified.skyblock.model.Item",
       "content_sha256": "f9e8d7...",
       "bytes": 7102271,
       "has_extra": true,

@@ -103,7 +103,7 @@ Adding a JSON file is not enough on its own - three things move together, and th
 
 1. **The file** - `data/v1/<category>/<table>.json`, where `<table>` is the `@Table(name = ...)` of the Java model.
 2. **The mapping** - an entry in `MODEL_CLASS_BY_TABLE` at the top of `scripts/generate_index.py`. The class name cannot be derived from the file name; English plurals are irregular enough (`bestiary_categories` to `BestiaryCategory`, `essences` to `Essence`) that a rule would be wrong more often than the dict is tedious.
-3. **The model** - a matching `JpaModel` entity in [simplified-api/skyblock](https://github.com/simplified-api/skyblock) under `dev.sbs.skyblockdata.model`.
+3. **The model** - a matching `JpaModel` entity in [simplified-api/skyblock](https://github.com/simplified-api/skyblock) under `dev.simplified.skyblock.model`.
 
 Removing a table is the same three in reverse. A mapping left behind after its file is deleted aborts the generator as a stale entry, which is the intended failure.
 
