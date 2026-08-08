@@ -50,7 +50,7 @@ partial index when they disagree.
 `bestiary_categories` to `BestiaryCategory`, `essences` to `Essence`, `mixins` to `Mixin`. Every rule
 that would replace it is wrong more often than the dict is tedious.
 
-The class it names must exist in `simplified-api/skyblock` under `dev.simplified.skyblock.model`.
+The class it names must exist in `simplified-api/skyblock` under `api.simplified.skyblock.model`.
 `master` there must connect against `master` here, so a table lands with or after its model and never
 before.
 

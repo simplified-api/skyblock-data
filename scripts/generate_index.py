@@ -36,7 +36,7 @@ from typing import Dict, List, Optional, Tuple
 # file whose table is not registered.
 # ---------------------------------------------------------------------------
 
-MODEL_PACKAGE = "dev.simplified.skyblock.model"
+MODEL_PACKAGE = "api.simplified.skyblock.model"
 
 MODEL_CLASS_BY_TABLE: Dict[str, str] = {
     "accessories": f"{MODEL_PACKAGE}.Accessory",
